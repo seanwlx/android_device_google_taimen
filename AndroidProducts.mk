@@ -17,5 +17,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_taimen.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_taimen-eng
+    twrp_taimen-eng \
     twrp_taimen-userdebug
