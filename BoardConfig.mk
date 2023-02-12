@@ -47,4 +47,4 @@ TARGET_RECOVERY_UI_LIB := \
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=12
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_taimen_defconfig
+TARGET_KERNEL_CONFIG := wahoo_defconfig

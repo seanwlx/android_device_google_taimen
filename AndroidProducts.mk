@@ -13,11 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_taimen.mk \
-    $(LOCAL_DIR)/aosp_taimen_hwasan.mk \
-    $(LOCAL_DIR)/lineage_taimen.mk
+    $(LOCAL_DIR)/twrp_taimen.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_taimen-userdebug
+    twrp_taimen-eng
+    twrp_taimen-userdebug
