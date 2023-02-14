@@ -121,7 +121,6 @@ TW_INCLUDE_CRYPTO := true
 TW_USE_TOOLBOX := true
 #TW_HAS_EDL_MODE := true?
 TW_OVERRIDE_SYSTEM_PROPS := "ro.build.version.security_patch;ro.build.version.release"
-BOARD_VNDK_RUNTIME_DISABLE := true
 TW_INCLUDE_REPACKTOOLS := true
 
 # TWRP Debug Flags

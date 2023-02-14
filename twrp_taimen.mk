@@ -34,9 +34,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.hardware.gatekeeper=msm8998
 
 ## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := taimen
 PRODUCT_NAME := twrp_taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
+PRODUCT_MANUFACTURER := Google
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
