@@ -1,0 +1,9 @@
+# system props for time-services
+persist.timed.enable=true
+
+# Simulate sdcard on /data/media
+persist.fuse_sdcard=true
+
+# Soc
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8998
