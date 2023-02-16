@@ -23,8 +23,6 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-COMMON_PATH := device/google/taimen
-
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -79,7 +77,11 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_METADATA_PARTITION := true
 
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
-TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/kernel/Image.lz4-dtb
+
+TARGET_KERNEL_CONFIG := lineageos_taimen_defconfig
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/google/wahoo
+TARGET_NEEDS_DTBOIMAGE := true
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8998
@@ -92,7 +94,7 @@ TARGET_RECOVERY_FSTAB := device/google/taimen/recovery.fstab
 
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-BOARD_BOOTIMAGE_PARITION_SIZE := 41943040
+BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2684354560
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 ifneq ($(PRODUCT_INCREASE_INODE_COUNT),true)
